@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-  line-height: 1.5;
 }
 
 html,
@@ -14,9 +13,29 @@ body {
 
 /* Add styles here! */
 
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+header {
+  border-bottom: 8px solid hsla(0, 0%, 60%, 1);
+}
+
+p {
+  /*Desired font size = 20px. 16 is the default browser REM. 20/16 = 1.25*/
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
 main {
   background-color: hsla(0, 0%, 40%, 1);
-  border-top: 8px solid hsla(0, 0%, 60%, 1);
+  padding: 64px 0;
 }
 
 
@@ -28,29 +47,31 @@ strong {
   padding: 24px;
   background-color: hsla(0, 0%, 100%, 1);
   border-bottom: 8px solid hsla(0, 0%, 60%, 1);
-  margin-top: 72px;
-  margin-bottom: 72px;
+  margin: 0 -24px;
 
 }
 
 .indented-heading {
+  font-size: 1.5rem;
+  line-height: 1.2;
   background-color: hsla(45, 100%, 50%, 1);
   border-bottom: 8px solid hsla(45, 100%, 40%, 1);
-  max-width: fit-content;
-  min-width: min-content;
+  width: fit-content;
   padding: 16px 32px;
   margin-top: -16px;
   margin-left: -32px;
+  margin-bottom: 1rem;
 }
 
 .intro-chunk {
   max-width: 415px;
-  padding: 24px;
+  padding-top: 96px;
+  padding-bottom: 64px;
+
 }
 
 .max-width-wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 800px;
-  padding: 24px;
+  padding: 0 24px;
 }
